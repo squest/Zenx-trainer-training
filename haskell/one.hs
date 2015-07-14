@@ -15,7 +15,7 @@ add a b
   | b == 0 = a
   | b > 0 = add (succ a) (pred b)
   | otherwise = sub a (- b)
-               
+
 sub a b
   | b == 0 = a
   | b > 0 = sub (pred a) (pred b)
@@ -31,5 +31,3 @@ divRem a b
   | a < b = (0 , a)
   | otherwise = (1+hasil, sisa)
   where (hasil, sisa) = divRem (a-b) b
-
-
