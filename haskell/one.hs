@@ -31,3 +31,23 @@ divRem a b
   | a < b = (0 , a)
   | otherwise = (1+hasil, sisa)
   where (hasil, sisa) = divRem (a-b) b
+
+sol173 lim = iter 0 1
+  where sqr x = x*x
+        iter res i
+          | (sqr $ i+2) - isqr > lim = res
+          | otherwise = iter counting (succ i)
+          where isqr = sqr i
+                counting = (+) res $ length $
+                           takeWhile (\x -> x - rempong <= lim) $
+                           map sqr [i+2,i+4..]
+                        
+
+
+
+
+
+
+
+
+
