@@ -10,7 +10,7 @@
 6. global and local scope  
 7. conditionals with ifs, guards, and pattern matching  
 8. recursive functions  
-9. spotting patterns of functions  
+9. understanding the signatures of functions and constants   
 10. lambda functions  
 
 ## License
