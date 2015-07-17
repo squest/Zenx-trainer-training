@@ -1,10 +1,17 @@
-# trainer
+# Bootstrapping Haskell
 
-A Clojure library designed to ... well, that part is up to you.
+### Important things to know
 
-## Usage
-
-FIXME
+1. Running GHCI & load program to ghci  
+2. :set +t , :cd, :t
+3. primitive types & collection types + operations on those types  
+4. types and type classes  
+5. defining constants and functions    
+6. global and local scope  
+7. conditionals with ifs, guards, and pattern matching  
+8. recursive functions  
+9. spotting patterns of functions  
+10. lambda functions  
 
 ## License
 
