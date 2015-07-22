@@ -1,0 +1,23 @@
+#lang racket
+
+(define-syntax-rule (def id body)
+  (define id body))
+
+(define-syntax-rule (fn binding body)
+  (lambda binding body))
+
+(def rem remainder)
+(def div quotient)
+
+(define (numcol n)
+  (def (iter i res)
+    (if (< i 10)
+        (cons i res)
+        (iter (div i 10) (cons (rem i 10) res))))
+  (iter n '[]))
+
+(define (jumdig n)
+  (length (numcol n)))
+
+(define (sqrt2 lim)
+  
